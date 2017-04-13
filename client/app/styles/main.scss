@@ -1,9 +1,69 @@
+// COLOR VARIABLES
+$commander-body: #f7f7f7;
+$commander-black: #212121;
 
+//FONT VARIABLES
+$commander-font-roboto: 'Roboto', sans-serif;
+$commander-font-roboto-cond: 'Roboto Condensed', sans-serif;
+
+// PRIMARY APP ELEMENTS
 body {
-  background-color: #aeaeae;
+  background-color: $commander-body;
 }
+
+// SASS FOR SHOW CARD DIRECTIVE
+.commander-show-card {
+	max-width: 250px;
+	height: auto;
+	border-radius: 4px;
+	box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.4);
+
+	.commander-show-top {
+		height: 200px;
+		padding: 10px;
+		border-radius: 4px 4px 0px 0px;
+		background-image: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.8) 100%), url('/images/meet-musicians/meet-musicians-card.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		.commander-show-title {
+			margin-top: 50%;
+			font-family: $commander-font-roboto-cond;
+			font-weight: 700;
+	    color: rgba(0, 0, 0, 0.9);
+	    font-size: 30px;
+		}
+
+		.commander-show-descrip {
+			font-family: $commander-font-roboto;
+			color: rgba(0, 0, 0, 0.7);
+			font-size: 12px;
+			font-weight: 500;
+		}
+	}
+
+	.commander-show-bottom {
+		background-color: $commander-black;
+		font-family: $commander-font-roboto;
+		font-size: 12px;
+		color: #3bade0;
+		border-radius: 0px 0px 4px 4px;
+		padding: 10px; 
+		text-align: right;
+	}
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
 }
+
+
+// -----------------------------------------------------------------------------
+// - import custom_class.scss
+// -----------------------------------------------------------------------------
+
+@import "custom_classes.scss";
+

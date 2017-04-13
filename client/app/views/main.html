@@ -1,12 +1,35 @@
 <div style="width: 80%; margin: 0 auto; background-color: #f7f7f7; height: 500px;">
-<h1>
-  BURROW HOME PAGE
-</h1>
-<div class="row users">  
-  <ul>
-    <li ng-repeat="user in main.awesomeUsers track by user._id">
-      {{user.email}}
-    </li>
-  </ul>
-</div>  
+	<h4>
+	  BURROW HOME PAGE
+	</h1>
+	<div>  
+	  <ul>
+	    <li ng-repeat="user in main.awesomeUsers track by user._id">
+	      {{user.email}}
+	    </li>
+	  </ul>
+	</div> 
+
+
+
+<!-- CARD DIRECTIVE HTML -->
+
+	<div class="commander-show-card">
+		<div class="commander-show-top">
+			<div class="commander-show-title">
+				Meet Musicians
+			</div>
+			<div class="commander-show-descrip">
+				Lorem sum dlor sit met, cons ctetur adi scing elit. In pul nar dui et que ciliis ultris. am frin lla.
+			</div>
+		</div>
+		<div class="commander-show-bottom">
+			<div class="commander-card-link">
+				VIEW LATEST EPISODES
+			</div>
+		</div>
+	</div>
+
+
+
 </div>
