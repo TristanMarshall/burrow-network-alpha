@@ -9,14 +9,16 @@ $commander-font-roboto-cond: 'Roboto Condensed', sans-serif;
 // PRIMARY APP ELEMENTS
 body {
   background-color: $commander-body;
-}
+} 
 
 // SASS FOR SHOW CARD DIRECTIVE
 .commander-show-card {
+	display: inline-block;
 	max-width: 250px;
 	height: auto;
 	border-radius: 4px;
 	box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.4);
+	margin: 7.5px;
 
 	.commander-show-top {
 		height: 200px;
